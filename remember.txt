@@ -1,0 +1,21 @@
+
+search with a single field:
+http://127.0.0.1:8000/search?search=content:Politics  //search with specific critarea for example fetch all content those contains word politics
+
+
+Search with a multiple fields:
+http://127.0.0.1:8000/search/?search=title:john&search=content:environmental
+
+
+
+startwith:
+
+http://127.0.0.1:8000/search/?title__startswith=joh
+
+endswith:
+
+http://127.0.0.1:8000/search/?title__endswith=cox
+
+ordering with descending:
+
+http://127.0.0.1:8000/search/?search=title:john&search=content:environmental&ordering=-id
